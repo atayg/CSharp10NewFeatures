@@ -1,8 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-using CSharp10NewFeatures.NetSix._6ExtendedPropertyPatterns;
-using CSharp10NewFeatures.NetSix._8AllowConstInterpolatedStrings;
-using static CSharp10NewFeatures.NetSix._2ImprovementsOfStructureTypes.ImprovementsOfStructureTypes;
-
+﻿
+using CSharp10NewFeatures.NetSix._11AllowBothAssignmentAndDeclarationDeconstruction;
 
 //2. ImprovementsOfStructureTypes
 
@@ -42,5 +39,23 @@ using static CSharp10NewFeatures.NetSix._2ImprovementsOfStructureTypes.Improveme
 //}
 
 // 8. Const Interpolated Strings
-Console.WriteLine(AllowConstInterpolatedStrings.FullProductName);
+//Console.WriteLine(AllowConstInterpolatedStrings.FullProductName);
 
+//10. Improved Definite Assignment
+
+Employee employee = new Employee
+{
+    FirstName = "Gökhan",
+    LastName = "Atay"
+};
+
+(string firstname1, string lastname1) = employee;
+
+string firstname2 = string.Empty;
+string lastname2 = string.Empty;
+(firstname2, lastname2) = employee;
+Console.WriteLine($"{firstname2} {lastname2}");
+
+// New syntax comes with C# 10.
+string firstname = string.Empty;
+(firstname, string lastname) = employee;

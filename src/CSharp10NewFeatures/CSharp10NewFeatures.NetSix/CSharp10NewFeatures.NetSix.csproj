@@ -9,8 +9,6 @@
 
   <ItemGroup>
     <Folder Include="7ImprovementsOnLambdaExpression\" />
-    <Folder Include="10ImprovedDefiniteAssignment\" />
-    <Folder Include="11AllowBothAssignmentAndDeclarationDeconstruction\" />
     <Folder Include="12AllowAsyncMethodBuilderAttributeOnMethods\" />
     <Folder Include="13CallerArgumentExpressionAttribute\" />
     <Folder Include="14EnhancedLinePragma\" />

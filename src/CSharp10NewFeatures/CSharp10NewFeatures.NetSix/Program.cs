@@ -5,12 +5,12 @@ using CSharp10NewFeatures.NetSix._11AllowBothAssignmentAndDeclarationDeconstruct
 
 // **** Improvement 1:
 //var m1 = new Measurement();
-//Console.WriteLine(m1);  // output: NaN (Undefined)
+//Console.WriteLine(m1);  // output: nan (undefined)
 //var m2 = default(Measurement);
 //Console.WriteLine(m2);  // output: 0 ()
 //var ms = new Measurement[2];
 //Console.WriteLine(string.Join(", ", ms));  // output: 0 (), 0 ()
-//var ms3 = new Measurement(51, "Gökhan Atay");
+//var ms3 = new Measurement(51, "gökhan atay");
 //Console.WriteLine(ms3);
 
 
@@ -59,3 +59,4 @@ Console.WriteLine($"{firstname2} {lastname2}");
 // New syntax comes with C# 10.
 string firstname = string.Empty;
 (firstname, string lastname) = employee;
+

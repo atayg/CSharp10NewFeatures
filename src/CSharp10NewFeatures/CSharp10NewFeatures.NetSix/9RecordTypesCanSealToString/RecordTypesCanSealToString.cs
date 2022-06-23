@@ -18,7 +18,7 @@
     public record TeamLead : Lead
     {
         public string TeamName { get; set; }
-        public override string ToString() // Error CS0239 'Student.ToString()': cannot override inherited member 'Person.ToString()' because it is sealed
+        public  override string ToString() // Error CS0239 'Student.ToString()': cannot override inherited member 'Person.ToString()' because it is sealed
         {
             return $"I am responsible for team, {TeamName}";
         }
